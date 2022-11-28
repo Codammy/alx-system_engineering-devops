@@ -1,2 +1,1 @@
-This is all about shell basics, we moove...
-This is all about shell basics
+copy of the main branch
