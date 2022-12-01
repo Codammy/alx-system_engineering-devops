@@ -1,2 +1,3 @@
 #!/bin/bash
-ln __ls__ bin/bash
+ln __ls__ -> /
+bin/bash
