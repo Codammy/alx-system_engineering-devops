@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo -guillaume chown betty hello
+./StarWars 
