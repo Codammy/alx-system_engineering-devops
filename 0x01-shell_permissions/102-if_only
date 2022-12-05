@@ -1,2 +1,2 @@
 #!/bin/bash
-./StarWars 
+chown --from guillaume=betty hello
