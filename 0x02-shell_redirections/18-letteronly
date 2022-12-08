@@ -1,0 +1,2 @@
+#!/bin/bash
+cat [[:upper:]]* /etc/ssh/sshd_config
