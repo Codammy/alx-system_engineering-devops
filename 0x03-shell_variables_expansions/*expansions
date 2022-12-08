@@ -1,0 +1,4 @@
+chmod u+x *
+rm *~
+rm *.swp
+git add .
