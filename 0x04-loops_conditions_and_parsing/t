@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 # Bash script that displays Best School 10 times.
 #Requirement:
-#You must use the for loop (while and until are forbidden)
+#You must use the while loop (for and until are forbidden)
 
-for ((i=0; i < 10; i++)); do
+i=0
+while [ $i -le 10 ]; do
 	echo "Best School"
-done
+	i=$i+1
+done;
