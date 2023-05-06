@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Write a Bash script that displays the content of the file /etc/passwd.
 #script should only display:
 
