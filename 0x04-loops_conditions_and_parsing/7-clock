@@ -9,7 +9,7 @@ Hours=0
 while (( Hours <= 12 ))
 do
 	Mins=1
-	echo "Hour:$((Hours))"
+	echo "Hour: $((Hours))"
 	Hours=$((Hours + 1))
 	while (( Mins <= 59 )); do
 		echo $((Mins))
