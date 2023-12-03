@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#Bash script that pings an IP address passed as an argument.
+
+if $# != 1 echo Usage: 5-is_the_host_on_the_network {IP_ADDRESS};
+else ping $1
