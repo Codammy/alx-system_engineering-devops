@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Lists services connected to the network internet
+netstat
