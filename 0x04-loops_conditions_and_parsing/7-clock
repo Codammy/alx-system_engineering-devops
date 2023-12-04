@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script tells you Best school ten times
+#-------- SCRIPT -------
+HOUR=0
+while  (( $HOUR <= 12 ))
+do
+	echo "Hour: $HOUR"
+	MIN=1
+	while (( $MIN < 60 )); do
+		echo "$MIN"
+		(( MIN++ ))
+	done
+	(( HOUR++ ))
+done

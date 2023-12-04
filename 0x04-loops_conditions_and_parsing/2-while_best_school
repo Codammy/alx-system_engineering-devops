@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script tells you Best school ten times
+#-------- SCRIPT -------
+i=0
+while ((i < 10)) 
+do 
+	echo "Best School"
+	let i++
+done
