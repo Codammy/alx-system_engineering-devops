@@ -5,7 +5,8 @@
 
 ![web-ifr1](/assets/web-ufr1.png)
 
-A good Software Engineer is a [lazy Software Engineer.](https://www.techwell.com/techwell-insights/2013/12/why-best-programmers-are-lazy-and-act-dumb
+A good Software Engineer is a 
+[lazy Software Engineer.](https://www.techwell.com/techwell-insights/2013/12/why-best-programmers-are-lazy-and-act-dumb
 
 )
 ![lazy_automation](82VsYEC.jpg)
