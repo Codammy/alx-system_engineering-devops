@@ -3,10 +3,10 @@
 `SysAdmin`
 
 
-[web-ifr1.jpg](/web-ufr1.jpg)
+![web-ifr1.jpg](/web-ufr1.jpg)
 
 A good Software Engineer is a [lazy Software Engineer.](https://www.techwell.com/techwell-insights/2013/12/why-best-programmers-are-lazy-and-act-dumb)
-[lazy_automation](82VsYEC.jpg)
+![lazy_automation](82VsYEC.jpg)
 
 ## Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
