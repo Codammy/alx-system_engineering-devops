@@ -2,4 +2,4 @@
 # Bash script that install nginx server
 
 apt-get install -y nginx
-echo 'Hello World!' > /var/www/html/index.html
+echo 'Hello World!' > /var/www/html/index
