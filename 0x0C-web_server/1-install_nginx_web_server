@@ -3,5 +3,7 @@
 
 apt-get install -y nginx
 echo 'Hello World!' > /var/www/html/index
-ufw allow 'NGINX HTTP'
+ufw allow 'Nginx Full'
+ufw allow 'Nginx HTTP'
+ufw allow 'Nginx HTTPS'
 service nginx restart
