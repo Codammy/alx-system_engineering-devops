@@ -1,0 +1,3 @@
+server_name _;
+rewrite ^/redirect_me$ https://github.com/codammy/ permanent
+rewrite ^

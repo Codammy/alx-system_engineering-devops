@@ -2,4 +2,4 @@
 # Configure Nginx server so that /redirect_me is redirecting to another page.
 
 apt-get install -y nginx
-
+sed -i 's/server_name _;/server_name _;\n\trewrite ^\/redirect_me$ https:\/\/github.com\/codammy\/ permanent;/' /etc/nginx/sites-available/default
