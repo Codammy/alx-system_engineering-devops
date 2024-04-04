@@ -2,8 +2,5 @@
 # Bash script that install nginx server
 
 apt-get install -y nginx
-echo 'Hello World!' > /var/www/html/index
-ufw allow 'Nginx Full'
-ufw allow 'Nginx HTTP'
-ufw allow 'Nginx HTTPS'
+echo 'Hello World!' > /var/www/html/index.html
 service nginx restart
