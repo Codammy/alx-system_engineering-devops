@@ -1,0 +1,5 @@
+
+	FROM httpd
+	RUN mkdir -p /usr/local/apache2/htdocs && 	echo 'Hello Holberton' > /usr/local/apache2/htdocs/index.html
+	EXPOSE 80
+	
