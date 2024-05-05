@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Configuring nginx on a new system to have a response header X-served_by
+# x-served_by: {hostname}
+
+sudo apt-get install -y nginx
+sudo ufw allow 'NGINX HTTP'
+HOST=$(hostname)
+sed -i "/server_name/a\\\tadd_header X-served-By $HOST;" /etc/nginx/sites-available/default
