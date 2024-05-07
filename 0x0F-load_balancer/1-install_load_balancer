@@ -11,4 +11,4 @@ backend proxy_backend
 \tbalance roundrobin
 \tserver server1 100.26.154.206 check
 \tserver server2 54.144.249.31 check" >> /etc/haproxy/haproxy.cfg
-sudo systemctl restart haproxy
+sudo /etc/init.d/haproxy restart
