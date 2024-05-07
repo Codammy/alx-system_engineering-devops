@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# find out what’s keeping your Ubuntu container’s Nginx installation from listening on port 80
+
+sudo ufw all 'NGINX HTTP'
+sudo service restart nginx
