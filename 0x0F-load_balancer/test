@@ -1,0 +1,17 @@
+
+frontend test_proxy	
+bind *:80	
+default_backend proxy_backend
+
+backend proxy_backend	
+balance roundrobin	
+server server1 100.26.154.206	
+server server2 54.144.249.31"sudo echo -e "
+frontend test_proxy	
+bind *:80	
+default_backend proxy_backend
+
+backend proxy_backend	
+balance roundrobin	
+server server1 100.26.154.206	
+server server2 54.144.249.31
