@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# installs and configure ufw to filter connections
+
+apt-get install -y ufw
+ufw default deny incoming
+ufw allow 22/tcp
+ufw allow 443
+ufw allow 80/http
