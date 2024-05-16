@@ -2,5 +2,5 @@
 # find out what’s keeping Nginx installation from listening on port 80
 apt-get update
 apt-get install -y nginx
-sudo ufw all 'NGINX HTTP'
-sudo service nginx start
+ufw allow 'NGINX HTTP'
+service nginx start
