@@ -3,15 +3,15 @@
 Python script that, uses REST API, for a given employee ID,
 returns information about his/her TODO list progress.
 """
-import requests
-import json
-from datetime import datetime
 
 
 if __name__ == '__main__':
+    import json
+    import requests
+
     URL = 'https://jsonplaceholder.typicode.com'
-    print('Consuming all tasks @' + str(datetime.now()))
     all_tasks = requests.get(URL + '/todos').json()
+
     u_tasks = []
     all_users_tasks = dict()
     for task in all_tasks:
