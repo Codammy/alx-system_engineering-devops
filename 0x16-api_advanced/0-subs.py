@@ -8,9 +8,9 @@ import sys
 
 def number_of_subscribers(subreddit):
     """queries number of subscribers for a given subreddit"""
-    url = f"http://api.reddit.com/r/{subreddit}/about"
+    url = f"https://api.reddit.com/r/{subreddit}/about"
 
-    res = requests.get(url)
+    res = requests.get(url, headers={'User-Agent': 'Laptop'})
     if res.ok and res.json()['data'].get('subscribers'):
         return res.json()['data'].get('subscribers')
     return 0
