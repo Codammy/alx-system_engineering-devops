@@ -3,7 +3,6 @@
 Queries reddit api and returns number of subscribers for a given subreddit.
 """
 import requests
-import sys
 
 
 def number_of_subscribers(subreddit):
@@ -15,5 +14,5 @@ def number_of_subscribers(subreddit):
 
     res = requests.get(url, headers={'User-Agent': 'Laptop'})
     if res.ok and not res.is_redirect:
-        return res.json()['data'].get('subscribers')
+        return res.json().get('data', {}).get('subscribers', 0)
     return 0
