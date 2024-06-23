@@ -13,6 +13,6 @@ def number_of_subscribers(subreddit):
     url = f"https://api.reddit.com/r/{subreddit}/about"
 
     res = requests.get(url, headers={'User-Agent': 'Laptop'})
-    if res.ok and not res.is_redirect:
-        return res.json().get('data', {}).get('subscribers', 0)
+    #if res.ok and not res.is_redirect:
+    return res.json().get('data', {}).get('subscribers', 0)
     return 0
