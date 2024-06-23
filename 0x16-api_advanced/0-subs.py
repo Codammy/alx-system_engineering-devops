@@ -11,8 +11,9 @@ def number_of_subscribers(subreddit):
     url = f"https://api.reddit.com/r/{subreddit}/about"
 
     res = requests.get(url, headers={'User-Agent': 'Laptop'})
-    data = res.json()['data']
-    if res.ok and data.get('title') == subreddit:
-        print(type(data.get('subscribers')))
-        return data.get('subscribers')
+    if res.ok and res.json()['data'].get('title') == subreddit:
+        return res.json()['data'].get('subscribers')
     return 0
+
+if __name__ == '__main__':
+    number_of_subscribers(sys.argv[1])
