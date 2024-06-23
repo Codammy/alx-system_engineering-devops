@@ -13,5 +13,6 @@ def number_of_subscribers(subreddit):
     res = requests.get(url, headers={'User-Agent': 'Laptop'})
     data = res.json()['data']
     if res.ok and data.get('title') == subreddit:
+        print(type(data.get('subscribers')))
         return data.get('subscribers')
     return 0
