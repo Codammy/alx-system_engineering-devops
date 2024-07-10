@@ -1,7 +1,0 @@
-#!/bin/bash
-
-func () {
-	echo "hello $1"
-	sleep 2
-}
-func Dami
