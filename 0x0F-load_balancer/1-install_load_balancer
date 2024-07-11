@@ -9,6 +9,7 @@ frontend test_proxy
 \tdefault_backend proxy_backend\n
 backend proxy_backend
 \tbalance roundrobin
-\tserver web-01 100.26.154.206
-\tserver web-02 54.144.249.31" >> /etc/haproxy/haproxy.cfg
+\tserver web-01 52.87.215.141
+\tserver web-02 54.174.134.107" >> /etc/haproxy/haproxy.cfg
+sudo /etc/init.d/haproxy reload
 sudo /etc/init.d/haproxy restart
