@@ -1,0 +1,8 @@
+#!/bin/bash
+
+apt-get remove nginx
+apt-get update
+apt-get install nginx
+service nginx enable
+service nignx restart
+ufw allow 'HTTP 80'
