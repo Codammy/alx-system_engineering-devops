@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# install the ufw firewall and setup a few rules on web-01
+
+apt-get update
+apt-get install -y ufw
+ufw allow 22/tcp
+ufw allow 443/tcp
+ufw allow 80/tcp
+ufw enable
