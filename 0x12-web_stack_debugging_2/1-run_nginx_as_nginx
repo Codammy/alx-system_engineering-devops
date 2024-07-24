@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# EXPLAING WHT THE SCRIPT IS DOING
 apt-get install nginx
 useradd nginx
 chown -R nginx:nginx /var/{log,lib}/nginx
