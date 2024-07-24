@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # fix nginx to run as nginx user on container
+apt-get install -y nginx
 useradd nginx
 chown -R nginx:nginx /var/{log,lib}/nginx
 sed -i "s/user [a-zA-Z0-9_#-]\{1,10\}/user nginx/" /etc/nginx/nginx.conf
