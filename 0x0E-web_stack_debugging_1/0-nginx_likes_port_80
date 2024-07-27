@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
-# Bash script that solves a problem of nginx not
-# listening to port 80
-apt-get remove nginx
+# Bash script that solves a problem of nginx not listening to port 80
 apt-get update
 apt-get install nginx
-service nginx enable
-service nignx restart
 ufw allow 'HTTP 80'
+service nignx restart
