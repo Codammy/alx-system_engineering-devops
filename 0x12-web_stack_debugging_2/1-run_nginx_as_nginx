@@ -5,4 +5,4 @@ useradd nginx
 chown -R nginx:nginx /var/{log,lib}/nginx
 sed -i "s/user [a-zA-Z0-9_#-]\{1,10\}/user nginx/" /etc/nginx/nginx.conf
 sed -i "s/listen [0-9]\{1,10\}/listen 8080/" /etc/nginx/sites-available/default
-service nginx restart
+sudo -u nginx service nginx restart
