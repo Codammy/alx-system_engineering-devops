@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # fix nginx to run as nginx user on container
 pkill apache2
-apt-get install nginx
+apt-get -y install nginx
 useradd nginx
 chown -R nginx:nginx /var/{log,lib}/nginx
 chmod 644 /etc/nginx/nginx.conf
