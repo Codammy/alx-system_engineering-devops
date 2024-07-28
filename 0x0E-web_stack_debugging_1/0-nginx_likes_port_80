@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # Bash script that solves a problem of nginx not listening to port 80
-apt-get update
-apt-get install nginx ufw
-ufw enable
-ufw allow 'NGINX HTTP'
+
+rm /etc/nginx/sites-enabled/default/
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 service nginx restart
