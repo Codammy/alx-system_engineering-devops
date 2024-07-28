@@ -2,5 +2,5 @@
 # Bash script that solves a problem of nginx not listening to port 80
 apt-get update
 apt-get install nginx
-ufw allow 'HTTP 80'
+# ufw allow 'HTTP 80'
 service nignx restart
