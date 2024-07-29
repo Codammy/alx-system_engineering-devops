@@ -4,6 +4,7 @@ apt-get update
 apt-get -y install nginx ufw
 
 rm /etc/nginx/sites-enabled/default
+pkill apache2
 sed -i "s/8080/80/g" /etc/nginx/sites-available/default
 sed -i "/listen/a root /var/www/html/" /etc/nginx/sites-available/default
 ln -s /etc/nginx/sites-enabled/default /etc/nginx/sites-available/default
