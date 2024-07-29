@@ -3,10 +3,13 @@
 apt-get update
 apt-get -y install nginx ufw
 
+ufw enable
 rm /etc/nginx/sites-enabled/default
 pkill apache2
+pkill nginx
 sed -i "s/8080/80/g" /etc/nginx/sites-available/default
 sed -i "/listen/a root /var/www/html/" /etc/nginx/sites-available/default
+echo "Hello" > /var/www/html/index.html
 ln -s /etc/nginx/sites-enabled/default /etc/nginx/sites-available/default
 ufw allow "NGINX HTTP"
 nginx
