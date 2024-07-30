@@ -6,7 +6,7 @@ from fabric.api import sudo, prefix, run
 def install_db():
     """installs mysql"""
     with prefix("apt update"):
-        if sudo("apt install -y mysql-server").succeeded:
+        if sudo("apt install -y mysql-server-5.7").succeeded:
             print("OK.")
 
 
