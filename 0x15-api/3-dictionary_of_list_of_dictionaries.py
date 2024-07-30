@@ -14,7 +14,8 @@ def fetch_user_tasks(userid, username):
     response = requests.get(url + "todos", params={"userId": userid})
     response = response.json()
     tasks = list(map(lambda obj: {"username": username,
-                                  "task": obj["completed"]}, response))
+                                  "task": obj["title"],
+                                  "completed": obj["completed"]}, response))
     with open("todo_all_employees.json", "a") as fp:
         json.dump({userid: tasks}, fp)
 
