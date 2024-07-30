@@ -24,4 +24,4 @@ if __name__ == "__main__":
         print(f"Employee {user_data['name']} is done \
 with tasks({noc}/{tt_task}):")
         for task in completed_tasks:
-            print(f"\t{task.get('title')}")
+            print(f"\t {task.get('title')}")
